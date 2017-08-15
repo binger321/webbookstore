@@ -1,6 +1,5 @@
 package service;
 
-import bean.Addresslist;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

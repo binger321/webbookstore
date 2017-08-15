@@ -27,6 +27,7 @@
         <property name="mappingLocations">
             <list>
                 <value>classpath:bean/Addresslist.hbm.xml</value>
+                <value>classpath:bean/Addresslist.hbm.xml</value>
             </list>
         </property>
         <property name="annotatedClasses">

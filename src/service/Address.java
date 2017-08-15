@@ -1,7 +1,5 @@
 package service;
 
-import bean.Addresslist;
-
 /**
  * Created with IntelliJ IDEA.
  * User: yb
