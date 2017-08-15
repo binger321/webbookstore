@@ -1,5 +1,6 @@
 package action;
 
+import bean.Addresslist;
 import com.opensymphony.xwork2.ActionSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import service.AddressImpl;

@@ -1,5 +1,6 @@
 package test;
 
+import bean.Addresslist;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 import service.Address;
@@ -23,4 +24,6 @@ public class Test {
         al.setPhone("123456123");
         ail.add(al);
     }
+
+
 }

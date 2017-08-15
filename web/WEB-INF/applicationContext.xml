@@ -27,12 +27,15 @@
         <property name="mappingLocations">
             <list>
                 <value>classpath:bean/Addresslist.hbm.xml</value>
-                <value>classpath:bean/Addresslist.hbm.xml</value>
+                <value>classpath:bean/Seller.hbm.xml</value>
+                <value>classpath:bean/Statuslist.hbm.xml</value>
             </list>
         </property>
         <property name="annotatedClasses">
             <list>
                 <value>bean.Addresslist</value>
+                <value>bean.Seller</value>
+                <value>bean.Statuslist</value>
             </list>
         </property>
     </bean>
@@ -46,4 +49,15 @@
         <property name="address" ref="address"></property>
     </bean>
 
+<!--注册-->
+    <bean id="registerAction" class="action.RegisterAction">
+        <property name="sellerService" ref="sellerService"></property>
+    </bean>
+    <bean name="sellerService" class="service.impl.SellerServiceImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+<!--登录-->
+    <bean id="loginAction" class="action.LoginAction">
+        <property name="sellerService" ref="sellerService"></property>
+    </bean>
 </beans>

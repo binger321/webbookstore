@@ -15,4 +15,14 @@
             <result name="success">/success.jsp</result>
         </action>
     </package>
+    <package name="webbookstore" namespace="/loginOrRegister" extends="struts-default">
+        <action name="registerAction" class="registerAction" method="register" >
+            <result name="success" type="redirect">/success.jsp</result>
+            <result name="error" type="redirect">/index.jsp</result>
+        </action>
+        <action name="loginAction" class="loginAction" method="login">
+            <result name="success" type="redirect">/shazichen.jsp</result>
+            <result name="error" type="redirect">/index.jsp</result>
+        </action>
+    </package>
 </struts>
